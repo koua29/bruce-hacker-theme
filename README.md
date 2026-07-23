@@ -1,6 +1,10 @@
 # 🕶️ Bruce Hacker Theme
 
-Thème UI pour le firmware **[Bruce](https://github.com/pr3y/Bruce)**, pensé pour le
+[![Bruce firmware](https://img.shields.io/badge/firmware-Bruce-8A2BE2?logo=github)](https://github.com/BruceDevices/firmware) [![Device](https://img.shields.io/badge/device-LilyGO%20T--Embed%20CC1101-1E90FF)](https://github.com/BruceDevices/firmware) [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
+> **EN** — A hacker-themed UI for the **[Bruce firmware](https://github.com/BruceDevices/firmware)** on the LilyGO T-Embed CC1101 (320×170). A hooded, green-eyed hacker shows up on every menu entry, with the menu label to its right. Two variants: **v2** (clean) and **v3** (technical HUD). Copy a theme folder to the SD card, then pick it in `Config → UI Theme`.
+
+Thème UI pour le firmware **[Bruce](https://github.com/BruceDevices/firmware)**, pensé pour le
 **LilyGO T-Embed CC1101** (écran 320×170). Un petit hacker encapuchonné aux yeux
 verts s'affiche sur **chaque entrée du menu**, avec le nom du menu à sa droite.
 
