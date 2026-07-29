@@ -77,4 +77,4 @@ Si ce thème te plaît, tu peux me payer un café :
 
 ## 📄 Licence
 
-MIT — voir [LICENSE](LICENSE). Thème par **koua29** (Arnaud).
+MIT — voir [LICENSE](LICENSE). Thème par **koua29**.
