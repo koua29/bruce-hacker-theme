@@ -1,0 +1,93 @@
+# 🕶️ Bruce Hacker Theme
+
+<p align="center">🇺🇸 <a href="README.md">English</a> · 🇫🇷 <b>Français</b></p>
+
+[![Bruce firmware](https://img.shields.io/badge/firmware-Bruce-8A2BE2?logo=github)](https://github.com/BruceDevices/firmware) [![Device](https://img.shields.io/badge/device-LilyGO%20T--Embed%20CC1101-1E90FF)](https://github.com/BruceDevices/firmware) [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
+Thème UI pour le firmware **[Bruce](https://github.com/BruceDevices/firmware)**, pensé pour le
+**LilyGO T-Embed CC1101** (écran 320×170). Un petit hacker encapuchonné aux yeux
+verts s'affiche sur **chaque entrée du menu**, avec le nom du menu à sa droite.
+
+![Aperçu](docs/hero.png)
+
+Deux variantes sont incluses :
+
+| Variante | Style | Aperçu |
+|----------|-------|--------|
+| **Hacker v2** | Perso à gauche, libellé simple à droite | [voir](docs/hacker-v2.png) |
+| **Hacker v3** | Interface « HUD technique » : cadre, catégorie, ligne terminal, barre de progression | [voir](docs/hacker-v3.png) |
+
+### Hacker v3 — HUD technique
+![Hacker v3](docs/hacker-v3.png)
+
+### Hacker v2 — épuré
+![Hacker v2](docs/hacker-v2.png)
+
+## 📦 Contenu
+
+- `Hacker v2/` — 16 GIF (320×140) + `Hacker v2.json`
+- `Hacker v3/` — 16 GIF (320×140) + `Hacker v3.json`
+
+Chaque thème couvre les **16 entrées** du menu Bruce : WiFi, BLE, RF, RFID, FM, IR,
+Files, GPS, NRF24, Interpreter, Others, Clock, Connect, Config, Ethernet, LoRa.
+
+## 🚀 Installation
+
+### Via carte SD
+1. Copie le dossier `Hacker v3` (ou `Hacker v2`) à la racine de la carte SD.
+2. Sur l'appareil : **Config → UI Theme → SD Card → `Hacker v3/Hacker v3.json`**.
+
+### Via WebUI (WiFi, sans carte à retirer)
+1. Sur l'appareil : **Files → WebUI**.
+2. Connecte-toi au WiFi affiché, ouvre l'IP dans le navigateur.
+3. Upload le dossier du thème dans la SD ou le LittleFS, puis sélectionne le `.json`
+   dans **Config → UI Theme**.
+
+## 🎨 Notes techniques
+
+- Le nom du menu est **intégré dans l'image** et `label` est à `0` : c'est ce qui
+  permet d'avoir le texte **à droite** du personnage (le firmware, lui, dessine
+  toujours le libellé centré *sous* l'icône).
+- Le haut de l'écran (heure, SD, WiFi, batterie) est **laissé libre** : ce sont les
+  icônes de statut dessinées par le firmware, on n'y met rien.
+- GIF statiques (1 frame), ~7–9 KB pièce → légers pour l'ESP32.
+- Couleurs (`priColor` / `secColor` / `bgColor`) au format RGB565 dans le `.json`.
+
+## 🖥️ Compatibilité
+
+Conçu pour le **LilyGO T-Embed CC1101** (320×170). Devrait fonctionner sur les
+autres cibles Bruce de résolution proche ; sur des écrans plus petits/grands,
+les images peuvent être recadrées.
+
+## 🛒 Matériel
+
+*Liens partenaires Amazon : si vous achetez via ces liens, le projet touche une petite commission, sans surcoût pour vous.*
+
+<table>
+<tr>
+<td align="center" width="33%">
+  <a href="https://www.amazon.fr/dp/B0D45MSMJR?linkCode=ll2&amp;tag=koua29bhackertheme-21&amp;ref_=as_li_ss_tl"><img src="docs/amazon-B0D45MSMJR.jpg" width="200" alt="Batterie Anker 545 (10 000 mAh)"></a><br>
+  <b><a href="https://www.amazon.fr/dp/B0D45MSMJR?linkCode=ll2&amp;tag=koua29bhackertheme-21&amp;ref_=as_li_ss_tl">Batterie Anker 545 (10 000 mAh)</a></b><br><sub>Pour faire tourner le T-Embed loin d'une prise</sub>
+</td>
+<td align="center" width="33%">
+  <a href="https://www.amazon.fr/dp/B0C1FCZM94?linkCode=ll2&amp;tag=koua29bhackertheme-21&amp;ref_=as_li_ss_tl"><img src="docs/amazon-B0C1FCZM94.jpg" width="200" alt="Antenne SMA 433 MHz (lot de 2)"></a><br>
+  <b><a href="https://www.amazon.fr/dp/B0C1FCZM94?linkCode=ll2&amp;tag=koua29bhackertheme-21&amp;ref_=as_li_ss_tl">Antenne SMA 433 MHz (lot de 2)</a></b><br><sub>Antenne sub-GHz pour la radio CC1101</sub>
+</td>
+<td align="center" width="33%">
+  <a href="https://www.amazon.fr/dp/B0B7NVMBPL?linkCode=ll2&amp;tag=koua29bhackertheme-21&amp;ref_=as_li_ss_tl"><img src="docs/amazon-B0B7NVMBPL.jpg" width="200" alt="microSD SanDisk 64 Go (lot de 2)"></a><br>
+  <b><a href="https://www.amazon.fr/dp/B0B7NVMBPL?linkCode=ll2&amp;tag=koua29bhackertheme-21&amp;ref_=as_li_ss_tl">microSD SanDisk 64 Go (lot de 2)</a></b><br><sub>Pour les thèmes, scripts et captures Bruce</sub>
+</td>
+</tr>
+</table>
+
+<sub>En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises.</sub>
+
+## ☕ Un café ?
+
+Si ce thème te plaît, tu peux me payer un café :
+
+<img src="docs/paypal-qr.png" width="180" alt="PayPal" />
+
+## 📄 Licence
+
+MIT — voir [LICENSE](LICENSE). Thème par **koua29**.
